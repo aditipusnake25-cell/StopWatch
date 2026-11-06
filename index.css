@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f8fafc;
+  background: #0b1020;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --color-bg: #0b1020;
+  --color-surface: #151d35;
+  --color-text: #f8fafc;
+  --color-muted: #a5b4fc;
+  --color-blue: #3b82f6;
+  --color-purple: #8b5cf6;
+  --font-display: 'Manrope', 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #0b1020;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 8% 15%, rgb(42 83 180 / 10%), transparent 30%),
+    radial-gradient(ellipse at 92% 45%, rgb(111 66 193 / 9%), transparent 32%),
+    linear-gradient(145deg, #0b1020 0%, #0d1428 52%, #0b1020 100%);
+  content: '';
+  pointer-events: none;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #a68aff;
+  outline-offset: 4px;
+}
+
+::selection {
+  color: #fff;
+  background: #7258d8;
+}
